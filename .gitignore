@@ -17,6 +17,7 @@ env/
 
 # Environment / secrets
 .env
+.env.example
 
 # Telegram session files (contain auth tokens — never commit!)
 *.session
