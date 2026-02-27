@@ -164,6 +164,7 @@ def send_data(payload: list[dict], url: str = WEBHOOK_URL, secret: str = WEBHOOK
     body = {
         "sent_at": datetime.utcnow().isoformat() + "Z",
         "reports": payload,
+        "location_id": 3
     }
 
     logger.info("Sending %d report(s) to %s …", len(payload), url)
